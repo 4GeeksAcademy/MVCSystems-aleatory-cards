@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,20 +10,27 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="shortcut icon" href="assets/img/4geeks.ico" />
+    <link rel="stylesheet" href="../src/style.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <h2>Generador de cartas</h2>
+      <div class="card" id="card"></div>
+      <br />
+      <div>
+        <button class="btn btn-primary" id="btnGenerar">
+          Generar carta !!
+        </button>
+      </div>
+      <br />
+      <div>
+        <label for="widthInput">Ancho:</label>
+        <input type="text" id="widthInput" />
+        <label for="heightInput">Alto:</label>
+        <input type="text" id="heightInput" />
       </div>
     </div>
+    <script src="../src/app.js"></script>
   </body>
 </html>
